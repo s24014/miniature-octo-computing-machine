@@ -1,8 +1,7 @@
 prefectures = ['Hokkaido', 'Hokkaido', 'Tokyo', 'Kanagawa']
 cities = ['Sapporo', 'Hokodate', 'Minato', 'Yokohama']
 populations = [100, 200, 300, 400]
-populations = {(state,city): population for state, city, population
-in zip(prefectures, cities, populations)}
+print(populations = {(state,city): population for state, city, population in zip(prefectures, cities, populations)})
 print(population_dict)
 
 multiplicated_xy_setdict = {frozenset([x, y]): x*y for x in range(2) for
